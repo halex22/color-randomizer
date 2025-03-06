@@ -1,0 +1,4 @@
+1. string RGB
+2. string HEX 
+3. Array of 3 numbers 
+4. object notation 
