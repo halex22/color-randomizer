@@ -1,37 +1,25 @@
+import {randomColorArray, rgbToHex} from "./utils.js";
 
-/**
- * 
- * @param {'rgb' | 'hex'} outputType - 
- */
-// function randomColor(outputType) {}
-
-
-function randomCOlorArray(){}
-
-function randomColorHex(){}
-
-function randomCOlorRGB(){}
-
-function randomColorObj(){}
-
-
-/**
- * 
- * @param {string} r 
- * @param {string} g 
- * @param {string} b 
- * @returns 
- */
-function rgbToHex(r, g, b) {
-  const red = r.toString(16).padStart(2, '0');
-  const green = g.toString(16).padStart(2, '0'); 
-  const blue = b.toString(16).padStart(2, '0');
-  return `#${red}${green}${blue}`;
+function randomColorHex() {
+    const rgbArray = randomColorArray();
+    const hexString = rgbToHex(rgbArray);
+    return hexString.toUpperCase();
 }
 
-
-export {
-  randomCOlorRGB,
-  randomColorHex,
-  randomColorObj
+function randomColorRgb() {
+    const rgbArray = randomColorArray();
+    const rgbString = `rgb(${rgbArray[0]},${rgbArray[1]},${rgbArray[2]})`;
+    return rgbString;
 }
+
+function randomColorObj() {
+    const rgbArray = randomColorArray();
+    const rgbObj = {r: rgbArray[0], g: rgbArray[1], b: rgbArray[2]};
+    return rgbObj;
+}
+// console.log(randomColorArray());
+// console.log(randomColorHex());
+// console.log(randomColorRgb());
+// console.log(randomColorObj());
+
+export { randomColorArray, randomColorObj, randomColorRgb, randomColorHex };

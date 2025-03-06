@@ -16,6 +16,6 @@
   "repository": {
     "directory": "",
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/halex22/color-randomizer"
   }
 }
