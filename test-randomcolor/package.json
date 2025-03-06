@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "random-color": "file:../random-color"
+  },
+  "type": "module"
+}
