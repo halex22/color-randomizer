@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "random-color": "file:../random-color"
-  },
-  "type": "module"
+    "random-color-sync": "^1.0.0"
+  }
 }

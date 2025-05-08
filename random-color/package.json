@@ -1,5 +1,5 @@
 {
-  "name": "random-color",
+  "name": "random-color-sync",
   "version": "1.0.0",
   "description": "generate random color in multiple formats",
   "main": "main.js",
